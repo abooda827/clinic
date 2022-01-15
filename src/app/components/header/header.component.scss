@@ -19,6 +19,14 @@ header {
   .nav {
     ul {
       padding: 10px;
+      .active::before,
+      a:hover::before {
+        content: ".";
+        color: $main-color;
+        margin-right: 5px;
+        font-weight: bold;
+        align-items: center;
+      }
       li {
         display: inline-block;
 
@@ -33,14 +41,6 @@ header {
           color: black;
           text-decoration: none;
           padding: 10px;
-
-          &::before {
-            content: ".";
-            color: $main-color;
-            margin-right: 5px;
-            font-weight: bold;
-            align-items: center;
-          }
         }
       }
     }

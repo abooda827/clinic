@@ -17,16 +17,17 @@ $sub-color: #00362c;
   }
 
   &-content {
-    position: absolute;
+    /* position: absolute;
     transform: translate(15%, -20%);
+    -webkit-transform: translate(15%, -20%);
+    -moz-transform: translate(15%, -20%);
+    -ms-transform: translate(15%, -20%);
+    -o-transform: translate(15%, -20%); */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 25px;
     text-align: center;
-    -webkit-transform: translate(15%, -20%);
-    -moz-transform: translate(15%, -20%);
-    -ms-transform: translate(15%, -20%);
-    -o-transform: translate(15%, -20%);
+
     &_plan {
       padding: 20px;
       box-shadow: 0px 30px 50px 0px #e3f1ef;
@@ -37,8 +38,8 @@ $sub-color: #00362c;
       -o-border-radius: 10px;
 
       h5 {
-        font-size: 1.5rem;
-        padding: 10px;
+        color: $main-color;
+        font-size: 12px;
       }
 
       button {
