@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faCheck} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-pricing-plans',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingPlansComponent implements OnInit {
 
+  faCheck = faCheck;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import { faCoffee , faTooth , faHeartbeat , faPills , faCheckCircle} from '@fortawesome/free-solid-svg-icons';
+import { faApple , faAndroid } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,6 +9,12 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
 
   faCoffee = faCoffee;
+  faApple = faApple;
+  faAndroid = faAndroid;
+  faTooth = faTooth;
+  faHeartbeat =faHeartbeat;
+  faPills = faPills;
+  faCheckCircle =faCheckCircle;
   constructor() { }
 
   ngOnInit(): void {

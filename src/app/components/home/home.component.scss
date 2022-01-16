@@ -57,7 +57,7 @@ $sub-color: #00362c;
 
 .services {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 100px;
   &-text {
     text-align: center;
@@ -66,7 +66,9 @@ $sub-color: #00362c;
     }
     h2 {
       color: $sub-color;
+      font-size: 2rem;
       padding: 30px;
+      font-weight: 800;
     }
   }
 
@@ -89,17 +91,35 @@ $sub-color: #00362c;
         width: 100px;
         height: 100px;
         margin: auto;
-        background-color: $sub-color;
         border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fa-icon {
+          color: white;
+          font-size: 50px;
+        }
+
+        &-dental {
+          background-color: $main-color;
+        }
+
+        &-heart {
+          background-color: #ff006f;
+        }
+
+        &-family {
+          background-color: #00d4ff;
+        }
       }
 
       h5 {
         font-size: 1.5rem;
-        padding: 10px;
+        padding: 30px;
       }
     }
   }
@@ -151,7 +171,7 @@ $sub-color: #00362c;
       }
 
       h5 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         padding: 10px;
       }
     }
@@ -203,12 +223,13 @@ $sub-color: #00362c;
         font-weight: bold;
       }
     }
-    &-img {
-      align-self: flex-end;
-      /* img {
-        width: 30vw;
-      }*/
+
+    &_features {
+      fa-icon {
+        color: $main-color;
+      }
     }
+
     button {
       margin: 10px;
       padding: 10px;

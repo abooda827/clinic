@@ -10,10 +10,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { PricingPlansComponent } from './components/pricing-plans/pricing-plans.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
-import { FontAwesomeModule  , FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +33,4 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  /* constructor(library:FaIconLibrary){
-    library.addIconPacks(fas , far);
-  } */
 }
