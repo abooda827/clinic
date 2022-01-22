@@ -3,6 +3,7 @@
     <h2>Contact Us</h2>
     <p>Home > Contact Us</p>
   </div>
+  <div class="clip"></div>
   <div class="container contact-main">
     <div class="contact-main_header">
       <h4>Contact Us</h4>
@@ -10,19 +11,20 @@
     </div>
     <div class="contact-main_content">
       <div class="form">
-        <div class="name">
-          <fa-icon></fa-icon>
+        <div class="form-name">
+          <fa-icon [icon]="faUser"></fa-icon>
           <input type="text" placeholder="Full Name" />
         </div>
-        <div class="email">
-          <fa-icon></fa-icon>
+        <div class="form-email">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
           <input type="text" placeholder="Email" />
         </div>
-        <div class="text">
-          <textarea placeholder="Message" cols="44" rows="5"></textarea>
+        <div class="form-text">
+          <textarea placeholder="Message"></textarea>
         </div>
-
-        <button class="btn">Send Message</button>
+        <div class="form-btn">
+          <button>Send Message</button>
+        </div>
       </div>
     </div>
   </div>

@@ -1,12 +1,14 @@
 $main-color: #32ba52;
 $sub-color: #00362c;
+$back-color: #f5f5f5;
 
 .work {
   height: calc(90vh - 20px);
   &-header {
     height: 30vh;
-    background-color: #c4d2cb;
+    background-color: $back-color;
     text-align: center;
+    clip-path: ellipse(80% 100% at 50% 0%);
 
     h2 {
       font-size: 50px;
@@ -60,7 +62,7 @@ $sub-color: #00362c;
       width: 500px;
       height: 250px;
       margin: 50px;
-      background-color: #c4d2cb;
+      background-color: $back-color;
 
       img {
         width: 400px;

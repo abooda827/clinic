@@ -1,12 +1,14 @@
 $main-color: #32ba52;
 $sub-color: #00362c;
+$back-color: #f5f5f5;
 
 .contact {
   height: calc(90vh - 20px);
   &-header {
     height: 30vh;
-    background-color: #c4d2cb;
+    background-color: $back-color;
     text-align: center;
+    clip-path: ellipse(80% 100% at 50% 0%);
 
     h2 {
       font-size: 50px;
@@ -17,6 +19,11 @@ $sub-color: #00362c;
       font-size: 12px;
     }
   }
+  /* .clip {
+    background-color: $back-color;
+    height: 50vh;
+    clip-path: ellipse(55% 19% at 50% 0%);
+  } */
   &-main {
     padding-top: 20px;
     &_header {
@@ -48,7 +55,91 @@ $sub-color: #00362c;
           color: $main-color;
         }
       }
+
       .form {
+        width: 70%;
+        display: grid;
+        grid-template-areas:
+          "myname myname myemail myemail"
+          "mytext mytext mytext mytext"
+          ". mybtn mybtn .";
+        gap: 10px;
+
+        input {
+          background-color: $back-color;
+          color: black;
+          border: none;
+          height: 60px;
+          width: 80%;
+          padding-left: 10px;
+          outline: none;
+        }
+        textarea {
+          border: none;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          outline: none;
+          width: 100%;
+          height: 100px;
+          padding: 20px;
+          background-color: $back-color;
+        }
+        &-name {
+          grid-area: myname;
+          background-color: $back-color;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        &-email {
+          grid-area: myemail;
+          background-color: $back-color;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        &-text {
+          grid-area: mytext;
+          background-color: $back-color;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        &-btn {
+          grid-area: mybtn;
+          display: flex;
+          justify-content: center;
+        }
+
+        fa-icon {
+          margin: 0 20px;
+          color: $main-color;
+        }
+        button {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-weight: bold;
+          border: none;
+          color: white;
+          background-color: $main-color;
+          width: 200px;
+        }
+      }
+      /* .form {
         display: grid;
         grid-template-areas:
           "myname myname myemail myemail"
@@ -83,7 +174,7 @@ $sub-color: #00362c;
           background-color: $main-color;
           width: 200px;
         }
-      }
+      } */
     }
   }
 }

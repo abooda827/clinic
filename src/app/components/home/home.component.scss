@@ -1,8 +1,9 @@
 $main-color: #32ba52;
 $sub-color: #00362c;
+$back-color: #f5f5f5;
 
 .home {
-  background-color: #c4d2cb;
+  background-color: $back-color;
   height: calc(90vh - 20px);
   display: flex;
   align-items: center;
@@ -80,7 +81,7 @@ $sub-color: #00362c;
 
     .service {
       padding: 20px;
-      box-shadow: 0px 30px 50px 0px #e3f1ef;
+      box-shadow: 0px 30px 50px 0px $back-color;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -151,7 +152,7 @@ $sub-color: #00362c;
 
     .testimonial {
       padding: 20px;
-      box-shadow: 0px 30px 50px 0px #e3f1ef;
+      box-shadow: 0px 30px 50px 0px $back-color;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -179,7 +180,7 @@ $sub-color: #00362c;
 }
 
 .app {
-  background-color: #c4d2cb;
+  background-color: $back-color;
   height: 100vh;
   display: flex;
   align-items: center;
