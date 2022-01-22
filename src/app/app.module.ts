@@ -9,7 +9,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { PricingPlansComponent } from './components/pricing-plans/pricing-plans.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
-import { NotFoundComponent } from './componentes/not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 

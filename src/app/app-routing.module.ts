@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { PricingPlansComponent } from './components/pricing-plans/pricing-plans.component';
-import { NotFoundComponent } from './componentes/not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 
 const routes: Routes = [
