@@ -1,0 +1,165 @@
+$main-color: #32ba52;
+$sub-color: #00362c;
+$back-color: #f5f5f5;
+
+footer {
+  height: 40vh;
+  background-color: $sub-color;
+  display: flex;
+  align-items: center;
+  color: $back-color;
+  ul {
+    list-style: none;
+    li {
+      padding: 7px 0;
+    }
+    a {
+      text-decoration: none;
+      color: $back-color;
+      font-size: 10px;
+    }
+  }
+  h3 {
+    font-weight: 800;
+    padding-bottom: 10px;
+  }
+  span {
+    color: $main-color;
+  }
+  hr {
+    margin: 30px 0;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 500px repeat(auto-fill, minmax(200px, 1fr));
+
+    &-content {
+      margin-right: 50px;
+      &_logo {
+        font-size: 30px;
+        color: $main-color;
+        margin-bottom: 20px;
+      }
+      &_text {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+      &_more {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        &_icon {
+          background-color: $main-color;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          display: inline-block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+        }
+        a {
+          text-decoration: none;
+          color: $main-color;
+        }
+      }
+    }
+    &-new {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 10px;
+      &_input {
+        background-color: rgb(58, 57, 57);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        fa-icon {
+          margin: 0 10px;
+          color: gray;
+        }
+        input {
+          background-color: rgb(58, 57, 57);
+          color: $back-color;
+          outline: none;
+          border: none;
+          margin-left: 10px;
+        }
+      }
+      &_btn {
+        border: none;
+        background-color: $main-color;
+        color: $back-color;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-text {
+      font-size: 10px;
+    }
+
+    &-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_instagram {
+        background-color: #ff0080;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+      &_twitter {
+        background-color: #00bbff;
+        margin: 0 20px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+      &_linkedin {
+        background-color: #1d70d0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+  }
+}

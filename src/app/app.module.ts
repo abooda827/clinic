@@ -11,6 +11,7 @@ import { PricingPlansComponent } from './components/pricing-plans/pricing-plans.
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContactUsComponent,
     PricingPlansComponent,
     HowItWorksComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
