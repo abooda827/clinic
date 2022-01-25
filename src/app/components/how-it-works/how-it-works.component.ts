@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPlayCircle} from '@fortawesome/free-solid-svg-icons';
+import { faPlayCircle , faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-how-it-works',
@@ -7,7 +7,8 @@ import { faPlayCircle} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./how-it-works.component.scss']
 })
 export class HowItWorksComponent implements OnInit {
-  faPlayCircle =faPlayCircle
+  faPlayCircle =faPlayCircle;
+  faCheckCircle = faCheckCircle;
   constructor() { }
 
   ngOnInit(): void {
