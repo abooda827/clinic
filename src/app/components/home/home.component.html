@@ -20,7 +20,23 @@
     <img src="assets/images/main-image.png" alt="" />
   </div>
 </div>
+
 <div class="container services">
+  <div class="services-search">
+    <div class="services-search_area">
+      <fa-icon [icon]="faSearch"></fa-icon
+      ><input type="text" placeholder="Search Area Name" />
+    </div>
+    <div class="services-search_doctor">
+      <fa-icon [icon]="faUser"></fa-icon
+      ><input type="text" placeholder="Select Doctor" />
+    </div>
+    <div class="services-search_select">
+      <fa-icon [icon]="faCalendarCheck"></fa-icon
+      ><input type="text" placeholder="Select Service" />
+    </div>
+    <button class="services-search_btn">Search & Book Now</button>
+  </div>
   <div class="services-text">
     <h4>Services</h4>
     <h2>Clinic Best Services</h2>
