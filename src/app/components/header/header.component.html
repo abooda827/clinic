@@ -1,10 +1,10 @@
 <header>
-  <div class="container">
-    <div class="logo">
+  <div class="container header">
+    <div class="header-logo">
       logo
       <img src="" alt="" />
     </div>
-    <div class="nav">
+    <div class="header-nav">
       <ul>
         <li>
           <a
@@ -48,7 +48,12 @@
         </li>
       </ul>
     </div>
-    <button class="btn download">Download Application</button>
-    <button class="btn clinic">For Clinic</button>
+    <div class="header-btns">
+      <button class="btn download">Download Application</button>
+      <button class="btn clinic">For Clinic</button>
+    </div>
+    <div class="toggle-icon">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </div>
   </div>
 </header>
