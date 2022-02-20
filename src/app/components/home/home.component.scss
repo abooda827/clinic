@@ -4,16 +4,20 @@ $back-color: #f5f5f5;
 
 .home {
   background-color: $back-color;
-  height: 97vh;
+  min-height: 97vh;
   display: flex;
   align-items: center;
 
   .main {
-    width: 50%;
-    margin-right: 0;
+    z-index: 10;
+    margin-top: -200px;
 
     h1 {
-      font-size: 80px;
+      font-size: 5em;
+      @media (max-width: 450px) {
+        font-size: 3em;
+      }
+      max-width: 700px;
       color: $sub-color;
       span {
         color: $main-color;
@@ -21,16 +25,20 @@ $back-color: #f5f5f5;
     }
     &-text {
       font-size: 14px;
-      max-width: 70%;
+      max-width: 500px;
       span {
         font-weight: bold;
       }
     }
     &-img {
       align-self: flex-end;
+      position: absolute;
+      right: 0;
 
       img {
-        height: 400px;
+        height: 37vw;
+        min-height: 300px;
+        overflow: hidden;
       }
     }
     button {
@@ -59,32 +67,36 @@ $back-color: #f5f5f5;
 }
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 200px;
   padding-bottom: 100px;
   &-search {
     position: absolute;
-    width: inherit;
-    height: 100px;
+    left: 20px;
+    right: 20px;
+    min-height: 120px;
     margin-top: -250px;
     background-color: white;
-    box-shadow: 0px 30px 50px 0px $back-color;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 50px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
     &_area,
     &_doctor,
     &_select,
     &_btn {
       background-color: $back-color;
-      height: 40%;
+      min-height: 50px;
+      min-width: 250px;
+      margin: 15px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -103,41 +115,43 @@ $back-color: #f5f5f5;
         padding-right: 20px;
       }
     }
-    &_area {
-      margin-left: 40px;
-      padding-left: 20px;
-    }
 
     &_btn {
       color: $back-color;
       background-color: $main-color;
-      margin-right: 40px;
-      width: auto;
+
       border: none;
     }
   }
   &-text {
     text-align: center;
+    @media (max-width: 600px) {
+      margin-top: 120px;
+    }
     h4 {
       color: $main-color;
     }
     h2 {
       color: $sub-color;
-      font-size: 2rem;
+      font-size: 2em;
       padding: 30px;
       font-weight: 800;
     }
   }
 
   &-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
     .service {
+      width: 20em;
       padding: 20px;
-      box-shadow: 0px 30px 50px 0px $back-color;
+      margin: 20px;
+      box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -175,7 +189,7 @@ $back-color: #f5f5f5;
       }
 
       h5 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding: 30px;
       }
     }
@@ -183,7 +197,7 @@ $back-color: #f5f5f5;
 }
 
 .testimonials {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
   &-text {
@@ -201,13 +215,16 @@ $back-color: #f5f5f5;
   }
 
   &-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 
     .testimonial {
+      width: 20em;
       padding: 20px;
+      margin: 15px;
       box-shadow: 0px 30px 50px 0px $back-color;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -216,19 +233,19 @@ $back-color: #f5f5f5;
       -o-border-radius: 10px;
 
       .testimonial-img {
-        width: 100px;
-        height: 100px;
+        width: 6.25em;
+        height: 6.25em;
         margin: auto;
         background-color: $sub-color;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
+        border-radius: 3.125em;
+        -webkit-border-radius: 3.125em;
+        -moz-border-radius: 3.125em;
+        -ms-border-radius: 3.125em;
+        -o-border-radius: 3.125em;
       }
 
       h5 {
-        font-size: 1.1rem;
+        font-size: 1.1em;
         padding: 10px;
       }
     }
@@ -237,19 +254,24 @@ $back-color: #f5f5f5;
 
 .app {
   background-color: $back-color;
-  height: 100vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
 
   .application {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 
   &-images {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     background-color: white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -258,24 +280,41 @@ $back-color: #f5f5f5;
     -o-border-radius: 50%;
 
     &_1 {
-      transform: translateX(80px);
-      -webkit-transform: translateX(80px);
-      -moz-transform: translateX(80px);
-      -ms-transform: translateX(80px);
-      -o-transform: translateX(80px);
+      transform: translateX(5em);
+      -webkit-transform: translateX(5em);
+      -moz-transform: translateX(5em);
+      -ms-transform: translateX(5em);
+      -o-transform: translateX(5em);
+    }
+    @media (max-width: 450px) {
+      &_1 {
+        height: 150px;
+      }
+      &_2 {
+        height: 200px;
+      }
     }
   }
 
   &-main {
-    width: 45vw;
-
+    max-width: 45em;
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+    h4 {
+      color: $main-color;
+    }
     h2 {
-      font-size: 50px;
+      font-size: 3.125em;
       color: $sub-color;
+
+      span {
+        color: $main-color;
+      }
     }
     &_text {
-      font-size: 14px;
-      max-width: 70%;
+      font-size: 0.875em;
+      max-width: 31.25em;
       padding: 20px 0;
       span {
         font-weight: bold;
@@ -283,15 +322,21 @@ $back-color: #f5f5f5;
     }
 
     &_features {
-      display: grid;
-      grid-template-columns: 30% 30%;
-      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      p {
+        width: 250px;
+        margin: 10px;
+      }
       fa-icon {
         color: $main-color;
+        margin-right: 10px;
       }
     }
 
     button {
+      width: 220px;
       margin: 10px;
       padding: 10px;
       border-radius: 50px;
@@ -301,16 +346,19 @@ $back-color: #f5f5f5;
       -o-border-radius: 50px;
       font-weight: bold;
       border: none;
+      fa-icon {
+        color: white;
+        margin: 5px;
+      }
       &.for-android {
         color: white;
         background-color: $main-color;
-        width: 200px;
       }
 
       &.for-ios {
         color: white;
         background-color: $sub-color;
-        width: 150px;
+        width: 180px;
       }
     }
   }

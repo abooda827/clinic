@@ -4,13 +4,14 @@
       logo
       <img src="" alt="" />
     </div>
-    <div class="header-nav">
+    <div class="header-nav show" [class.show]="isOpen">
       <ul>
         <li>
           <a
             routerLink="/"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isOpen = false"
             >Home</a
           >
         </li>
@@ -19,6 +20,7 @@
             routerLink="about"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isOpen = false"
             >About us</a
           >
         </li>
@@ -27,6 +29,7 @@
             routerLink="contact"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isOpen = false"
             >Contact us</a
           >
         </li>
@@ -35,6 +38,7 @@
             routerLink="pricing"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isOpen = false"
             >Pricing</a
           >
         </li>
@@ -43,6 +47,7 @@
             routerLink="work"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isOpen = false"
             >How it works</a
           >
         </li>
@@ -52,7 +57,7 @@
       <button class="btn download">Download Application</button>
       <button class="btn clinic">For Clinic</button>
     </div>
-    <div class="toggle-icon">
+    <div class="header-icon" (click)="onToggle()">
       <fa-icon [icon]="faBars"></fa-icon>
     </div>
   </div>

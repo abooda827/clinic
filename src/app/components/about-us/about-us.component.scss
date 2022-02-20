@@ -3,7 +3,7 @@ $sub-color: #00362c;
 $back-color: #f5f5f5;
 
 .about {
-  height: 90vh;
+  min-height: 90vh;
   &-header {
     height: 30vh;
     background-color: $back-color;
@@ -11,7 +11,7 @@ $back-color: #f5f5f5;
     clip-path: ellipse(80% 100% at 50% 0%);
 
     h2 {
-      font-size: 50px;
+      font-size: 3.125em;
       color: $sub-color;
       padding: 30px;
     }
@@ -22,15 +22,18 @@ $back-color: #f5f5f5;
   &-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     &_content {
-      width: 40vw;
+      width: 500px;
+      margin: 20px 0;
       h4 {
         color: $main-color;
         font-size: 12px;
       }
       h2 {
-        font-size: 50px;
+        font-size: 3.125em;
         color: $sub-color;
         span {
           color: $main-color;
@@ -52,26 +55,38 @@ $back-color: #f5f5f5;
         &.for-works {
           color: white;
           background-color: $main-color;
-          width: 200px;
+          width: 12.5em;
         }
       }
     }
     &_image {
-      display: inline-block;
-      width: 500px;
-      height: 250px;
-      margin: 50px;
-      background-color: $back-color;
+      min-width: 25em;
+      height: 18.75em;
+      margin: 50px 0;
+      position: relative;
+
+      &--before,
+      &--after {
+        height: 3.15em;
+        width: 100%;
+      }
+      &--now {
+        background-color: $back-color;
+        height: 12.5em;
+      }
 
       img {
-        width: 400px;
-        height: auto;
-        transform: translate(32px, -23px);
-        -webkit-transform: translate(32px, -23px);
-        -moz-transform: translate(32px, -23px);
-        -ms-transform: translate(32px, -23px);
-        -o-transform: translate(32px, -23px);
-
+        height: 15.625em;
+        width: 21.875em;
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-10.9375em, -7.8125em);
+        -webkit-transform: translate(-10.9375em, -7.8125em);
+        -moz-transform: translate(-10.9375em, -7.8125em);
+        -ms-transform: translate(-10.9375em, -7.8125em);
+        -o-transform: translate(-10.9375em, -7.8125em);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;

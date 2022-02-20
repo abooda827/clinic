@@ -8,9 +8,15 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
   faBars = faBars;
+
+  isOpen:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onToggle(){
+    this.isOpen = !this.isOpen;
   }
 
 }
